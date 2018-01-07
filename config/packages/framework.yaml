@@ -13,3 +13,8 @@ framework:
     #fragments: ~
     php_errors:
         log: true
+
+    serializer: ~
+    message:
+        routing:
+            'App\Message\Command\CreateNumber': enqueue_bridge.sender
