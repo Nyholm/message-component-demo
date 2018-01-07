@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace App\Message\CommandHandler;
 
 use App\Message\Command\CreateNumber;
-use App\Message\Query\FetchUser;
 
 /**
  * This command handler handles message asynchronously. See config in config/packages/framework.yaml
@@ -20,8 +19,5 @@ class CreateNumberHandler
         $number = rand($command->getMin(), $command->getMax());
 
         // TODO Store in database... or whatever
-
-
     }
-
 }

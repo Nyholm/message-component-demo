@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Message\Query;
 
 /**
- * This is the "Query" in CQRS
+ * This is the "Query" in CQRS.
  *
  * @author Tobias Nyholm <tobias.nyholm@gmail.com>
  */

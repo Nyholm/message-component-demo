@@ -24,5 +24,4 @@ class FetchUserHandler
 
         return $user;
     }
-
 }

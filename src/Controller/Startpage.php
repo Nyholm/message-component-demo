@@ -15,7 +15,6 @@ class Startpage
     private $messageBus;
 
     /**
-     *
      * @param MessageBusInterface $messageBus
      */
     public function __construct(MessageBusInterface $messageBus)
@@ -23,13 +22,13 @@ class Startpage
         $this->messageBus = $messageBus;
     }
 
-
     /**
      * @Route("/")
      */
     public function index()
     {
         $user = $this->messageBus->dispatch(new FetchUser(4711));
+
         return new Response('<html><head></head><body>Checkout the profiler page for messages.</body></html>');
     }
 }

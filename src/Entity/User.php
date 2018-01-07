@@ -13,7 +13,7 @@ class User
     private $name;
 
     /**
-     * @param int    $id
+     * @param int $id
      */
     public function __construct(int $id)
     {

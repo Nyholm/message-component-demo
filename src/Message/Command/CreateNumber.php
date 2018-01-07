@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Message\Command;
 
 /**
- * This is the "Command" in CQRS
+ * This is the "Command" in CQRS.
  *
  * @author Tobias Nyholm <tobias.nyholm@gmail.com>
  */
@@ -22,7 +22,6 @@ class CreateNumber
     private $min;
 
     /**
-     *
      * @param int $max
      * @param int $min
      */
@@ -47,7 +46,4 @@ class CreateNumber
     {
         return $this->min;
     }
-
-
-
 }
