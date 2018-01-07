@@ -11,6 +11,9 @@ use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
 use Symfony\Component\Message\MessageBusInterface;
 
+/**
+ * @author Tobias Nyholm <tobias.nyholm@gmail.com>
+ */
 class CreateNumberCommand extends Command
 {
     protected static $defaultName = 'app:create-number';
@@ -38,7 +41,7 @@ class CreateNumberCommand extends Command
     protected function execute(InputInterface $input, OutputInterface $output)
     {
         // Create a command and put it on the bus
-        $command = new CreateNumber(10,100);
+        $command = new CreateNumber(10, 100);
 
         // The message is async so we do not need to return anything
         $this->messageBus->dispatch($command);
@@ -46,7 +49,6 @@ class CreateNumberCommand extends Command
         $this->io->writeln('We put a command/message on the queue. No work has been done at the moment.');
         $this->io->writeln('Run "bin/console message:consume enqueue_bridge.receiver" to start reading form the queue.');
     }
-
 
     protected function initialize(InputInterface $input, OutputInterface $output)
     {

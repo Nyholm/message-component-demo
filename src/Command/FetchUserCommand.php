@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace App\Command;
 
 use App\Entity\User;
-use App\Message\Command\CreateNumber;
 use App\Message\Query\FetchUser;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
@@ -13,6 +12,9 @@ use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
 use Symfony\Component\Message\MessageBusInterface;
 
+/**
+ * @author Tobias Nyholm <tobias.nyholm@gmail.com>
+ */
 class FetchUserCommand extends Command
 {
     protected static $defaultName = 'app:fetch-user';
@@ -47,7 +49,6 @@ class FetchUserCommand extends Command
 
         $this->io->writeln(sprintf('We found a user named "%s" with id: %d', $user->getName(), $user->getId()));
     }
-
 
     protected function initialize(InputInterface $input, OutputInterface $output)
     {
