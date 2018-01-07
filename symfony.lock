@@ -56,6 +56,12 @@
     "doctrine/orm": {
         "version": "v2.6.0"
     },
+    "enqueue/amqp-ext": {
+        "version": "0.8.12"
+    },
+    "enqueue/amqp-tools": {
+        "version": "0.8.12"
+    },
     "enqueue/async-event-dispatcher": {
         "version": "0.7",
         "recipe": {
@@ -109,6 +115,9 @@
     },
     "psr/simple-cache": {
         "version": "1.0.0"
+    },
+    "queue-interop/amqp-interop": {
+        "version": "0.7.2"
     },
     "queue-interop/queue-interop": {
         "version": "0.6.1"

@@ -7,6 +7,11 @@ namespace App\Message\QueryHandler;
 use App\Entity\User;
 use App\Message\Query\FetchUser;
 
+/**
+ * Since this is a QueryHandler (Query in CQRS context) we MUST return a value.
+ *
+ * @author Tobias Nyholm <tobias.nyholm@gmail.com>
+ */
 class FetchUserHandler
 {
     public function __invoke(FetchUser $query)

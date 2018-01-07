@@ -23,3 +23,12 @@ of awesome things:
 
 ### Command handlers
 
+
+
+## Future work
+
+Different type of handlers
+- Event, commands, query.
+- Differnt rules and constraints
+
+ 
