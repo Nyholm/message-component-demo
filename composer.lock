@@ -2551,12 +2551,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sroze/symfony.git",
-                "reference": "5773aef435d1ca4b4db03782035e369b2aeb0066"
+                "reference": "1c819795adde897ac3b9627a309e1b7283b1dbfd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sroze/symfony/zipball/5773aef435d1ca4b4db03782035e369b2aeb0066",
-                "reference": "5773aef435d1ca4b4db03782035e369b2aeb0066",
+                "url": "https://api.github.com/repos/sroze/symfony/zipball/1c819795adde897ac3b9627a309e1b7283b1dbfd",
+                "reference": "1c819795adde897ac3b9627a309e1b7283b1dbfd",
                 "shasum": ""
             },
             "require": {
@@ -2701,7 +2701,7 @@
             "support": {
                 "source": "https://github.com/sroze/symfony/tree/add-message-component"
             },
-            "time": "2017-12-30T12:25:50+00:00"
+            "time": "2018-01-07T21:25:12+00:00"
         },
         {
             "name": "twig/twig",

@@ -179,6 +179,9 @@
     "symfony/polyfill-php72": {
         "version": "v1.6.0"
     },
+    "symfony/symfony": {
+        "version": "4.1-dev"
+    },
     "symfony/templating": {
         "version": "v4.0.3"
     },
