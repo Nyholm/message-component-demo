@@ -10,13 +10,16 @@ composer install
 nano .env
 
 # Test syncronous commands with
-sf app:fetch-user
+bin/console app:fetch-user
 
 # Test async commands with
-sf app:create-number
+bin/console app:create-number
 
 # Start async worker with
 bin/console message:consume enqueue_bridge.receiver
+
+# Check out the profiler page
+bin/console server:run
 ```
 
 What we install is the new component ([PR branch](https://github.com/symfony/symfony/pull/24411)) 
