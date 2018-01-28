@@ -16,7 +16,7 @@ bin/console app:fetch-user
 bin/console app:create-number
 
 # Start async worker with
-bin/console message:consume enqueue_bridge.receiver
+bin/console message:consume enqueue_bridge.receiver -vvv
 
 # Check out the profiler page
 bin/console server:run
