@@ -9,7 +9,6 @@
         "doctrine/orm": "^2.5.11",
         "enqueue/amqp-ext": "^0.8.11",
         "sensio/framework-extra-bundle": "^5.1",
-        "sroze/enqueue-bridge": "dev-master",
         "symfony/console": "^4.0",
         "symfony/flex": "^1.0",
         "symfony/symfony": "dev-master",
@@ -58,5 +57,11 @@
             "id": "01C38Z7F737WGJJFV4MR6GK2SF",
             "allow-contrib": "true"
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../symfony"
+        }
+    ]
 }

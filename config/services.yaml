@@ -26,12 +26,9 @@ services:
 
     App\Message\CommandHandler\:
         resource: '../src/Message/CommandHandler/*'
-        tags: ['message_handler']
+        tags: ['messenger.message_handler']
 
     App\Message\QueryHandler\:
         resource: '../src/Message/QueryHandler/*'
-        tags: ['message_handler']
-
-    # add more service definitions when explicit configuration is needed
-    # please note that last definitions always *replace* previous ones
+        tags: ['messenger.message_handler']
 
