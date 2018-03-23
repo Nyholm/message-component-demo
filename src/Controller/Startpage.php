@@ -7,7 +7,7 @@ namespace App\Controller;
 use App\Message\Query\FetchUser;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\Message\MessageBusInterface;
+use Symfony\Component\Messenger\MessageBusInterface;
 
 class Startpage
 {

@@ -1,2 +1,4 @@
 enqueue_bridge:
-    queue: "%env(ENQUEUE_BRIDGE_QUEUE_NAME)%"
+    enabled: false
+    queue: 'foo'
+    #queue: "%env(ENQUEUE_BRIDGE_QUEUE_NAME)%"

@@ -12,13 +12,8 @@
         "sroze/enqueue-bridge": "dev-master",
         "symfony/console": "^4.0",
         "symfony/flex": "^1.0",
-        "symfony/framework-bundle": "^4.0",
-        "symfony/lts": "^4@dev",
+        "symfony/symfony": "dev-master",
         "symfony/monolog-bundle": "^3.1",
-        "symfony/routing": "^4.0",
-        "symfony/symfony": "dev-add-message-component as 4.0",
-        "symfony/templating": "^4.0",
-        "symfony/twig-bundle": "^4.0",
         "symfony/web-server-bundle": "^4.0",
         "symfony/yaml": "^4.0"
     },
@@ -63,8 +58,5 @@
             "id": "01C38Z7F737WGJJFV4MR6GK2SF",
             "allow-contrib": "true"
         }
-    },
-    "repositories": [
-        { "type": "vcs", "url": "https://github.com/sroze/symfony" }
-    ]
+    }
 }

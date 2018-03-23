@@ -10,7 +10,7 @@ use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
-use Symfony\Component\Message\MessageBusInterface;
+use Symfony\Component\Messenger\MessageBusInterface;
 
 /**
  * @author Tobias Nyholm <tobias.nyholm@gmail.com>
