@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "6143f9eee0c8066b17e4cbea8900b4b7",
+    "content-hash": "b115e0cc46cea77d5bf6600b021c779e",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -448,39 +448,39 @@
         },
         {
             "name": "doctrine/doctrine-cache-bundle",
-            "version": "1.3.2",
+            "version": "1.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineCacheBundle.git",
-                "reference": "9baecbd6bfdd1123b0cf8c1b88fee0170a84ddd1"
+                "reference": "4c8e363f96427924e7e519c5b5119b4f54512697"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineCacheBundle/zipball/9baecbd6bfdd1123b0cf8c1b88fee0170a84ddd1",
-                "reference": "9baecbd6bfdd1123b0cf8c1b88fee0170a84ddd1",
+                "url": "https://api.github.com/repos/doctrine/DoctrineCacheBundle/zipball/4c8e363f96427924e7e519c5b5119b4f54512697",
+                "reference": "4c8e363f96427924e7e519c5b5119b4f54512697",
                 "shasum": ""
             },
             "require": {
                 "doctrine/cache": "^1.4.2",
                 "doctrine/inflector": "~1.0",
                 "php": ">=5.3.2",
-                "symfony/doctrine-bridge": "~2.2|~3.0|~4.0"
+                "symfony/doctrine-bridge": "~2.7|~3.3|~4.0"
             },
             "require-dev": {
                 "instaclick/coding-standard": "~1.1",
                 "instaclick/object-calisthenics-sniffs": "dev-master",
                 "instaclick/symfony2-coding-standard": "dev-remaster",
-                "phpunit/phpunit": "~4",
+                "phpunit/phpunit": "~4|~5",
                 "predis/predis": "~0.8",
                 "satooshi/php-coveralls": "^1.0",
                 "squizlabs/php_codesniffer": "~1.5",
-                "symfony/console": "~2.2|~3.0|~4.0",
-                "symfony/finder": "~2.2|~3.0|~4.0",
-                "symfony/framework-bundle": "~2.2|~3.0|~4.0",
-                "symfony/phpunit-bridge": "~2.7|~3.0|~4.0",
-                "symfony/security-acl": "~2.3|~3.0",
-                "symfony/validator": "~2.2|~3.0|~4.0",
-                "symfony/yaml": "~2.2|~3.0|~4.0"
+                "symfony/console": "~2.7|~3.3|~4.0",
+                "symfony/finder": "~2.7|~3.3|~4.0",
+                "symfony/framework-bundle": "~2.7|~3.3|~4.0",
+                "symfony/phpunit-bridge": "~2.7|~3.3|~4.0",
+                "symfony/security-acl": "~2.7|~3.3",
+                "symfony/validator": "~2.7|~3.3|~4.0",
+                "symfony/yaml": "~2.7|~3.3|~4.0"
             },
             "suggest": {
                 "symfony/security-acl": "For using this bundle to cache ACLs"
@@ -532,7 +532,7 @@
                 "cache",
                 "caching"
             ],
-            "time": "2017-10-12T17:23:29+00:00"
+            "time": "2018-03-27T09:22:12+00:00"
         },
         {
             "name": "doctrine/doctrine-migrations-bundle",
@@ -926,16 +926,16 @@
         },
         {
             "name": "enqueue/amqp-ext",
-            "version": "0.8.21",
+            "version": "0.8.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-enqueue/amqp-ext.git",
-                "reference": "5d173c3595ae5294aed6e72aacaa9d19007c875e"
+                "reference": "b44f577302cf6ac0701a62cd4dd5bfffad326b34"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-enqueue/amqp-ext/zipball/5d173c3595ae5294aed6e72aacaa9d19007c875e",
-                "reference": "5d173c3595ae5294aed6e72aacaa9d19007c875e",
+                "url": "https://api.github.com/repos/php-enqueue/amqp-ext/zipball/b44f577302cf6ac0701a62cd4dd5bfffad326b34",
+                "reference": "b44f577302cf6ac0701a62cd4dd5bfffad326b34",
                 "shasum": ""
             },
             "require": {
@@ -982,7 +982,7 @@
                 "messaging",
                 "queue"
             ],
-            "time": "2018-02-16T11:05:22+00:00"
+            "time": "2018-03-27T06:06:16+00:00"
         },
         {
             "name": "enqueue/amqp-tools",
@@ -1032,273 +1032,6 @@
                 "AMQP",
                 "messaging",
                 "queue"
-            ],
-            "time": "2018-03-06T10:46:03+00:00"
-        },
-        {
-            "name": "enqueue/async-event-dispatcher",
-            "version": "0.8.12",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-enqueue/async-event-dispatcher.git",
-                "reference": "3059b016a8eb440170f537fbd9cf738f994a5cbf"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-enqueue/async-event-dispatcher/zipball/3059b016a8eb440170f537fbd9cf738f994a5cbf",
-                "reference": "3059b016a8eb440170f537fbd9cf738f994a5cbf",
-                "shasum": ""
-            },
-            "require": {
-                "enqueue/enqueue": "^0.8@dev",
-                "php": ">=5.6",
-                "symfony/event-dispatcher": "^2.8|^3|^4"
-            },
-            "require-dev": {
-                "enqueue/fs": "^0.8@dev",
-                "enqueue/null": "^0.8@dev",
-                "enqueue/test": "^0.8@dev",
-                "phpunit/phpunit": "~5.5",
-                "symfony/config": "^2.8|^3|^4",
-                "symfony/dependency-injection": "^2.8|^3|^4",
-                "symfony/filesystem": "^2.8|^3|^4",
-                "symfony/http-kernel": "^2.8|^3|^4"
-            },
-            "suggest": {
-                "symfony/dependency-injection": "^2.8|^3|^4 If you'd like to use async event dispatcher container extension."
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.8.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Enqueue\\AsyncEventDispatcher\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Symfony async event dispatcher",
-            "homepage": "https://enqueue.forma-pro.com/",
-            "keywords": [
-                "async event",
-                "event dispatcher",
-                "messaging",
-                "queue"
-            ],
-            "time": "2018-01-04T09:46:31+00:00"
-        },
-        {
-            "name": "enqueue/enqueue",
-            "version": "0.8.23",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-enqueue/enqueue.git",
-                "reference": "b185069135994ba28f1a1c9c0d9cf2293f8e3b5c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-enqueue/enqueue/zipball/b185069135994ba28f1a1c9c0d9cf2293f8e3b5c",
-                "reference": "b185069135994ba28f1a1c9c0d9cf2293f8e3b5c",
-                "shasum": ""
-            },
-            "require": {
-                "enqueue/null": "^0.8@dev",
-                "php": ">=5.6",
-                "psr/log": "^1",
-                "queue-interop/queue-interop": "^0.6@dev|^1.0.0-alpha1",
-                "ramsey/uuid": "^2|^3.5"
-            },
-            "require-dev": {
-                "empi89/php-amqp-stubs": "*@dev",
-                "enqueue/amqp-bunny": "^0.8@dev",
-                "enqueue/amqp-ext": "^0.8@dev",
-                "enqueue/amqp-lib": "^0.8@dev",
-                "enqueue/dbal": "^0.8@dev",
-                "enqueue/fs": "^0.8@dev",
-                "enqueue/gearman": "^0.8@dev",
-                "enqueue/gps": "^0.8@dev",
-                "enqueue/pheanstalk": "^0.8@dev",
-                "enqueue/rdkafka": "^0.8@dev",
-                "enqueue/redis": "^0.8@dev",
-                "enqueue/simple-client": "^0.8@dev",
-                "enqueue/sqs": "^0.8@dev",
-                "enqueue/stomp": "^0.8@dev",
-                "enqueue/test": "^0.8@dev",
-                "phpunit/phpunit": "~5.5",
-                "symfony/config": "^2.8|^3|^4",
-                "symfony/console": "^2.8|^3|^4",
-                "symfony/dependency-injection": "^2.8|^3|^4",
-                "symfony/event-dispatcher": "^2.8|^3|^4",
-                "symfony/http-kernel": "^2.8|^3|^4"
-            },
-            "suggest": {
-                "enqueue/amqp-ext": "AMQP transport (based on php extension)",
-                "enqueue/dbal": "Doctrine DBAL transport",
-                "enqueue/fs": "Filesystem transport",
-                "enqueue/redis": "Redis transport",
-                "enqueue/sqs": "Amazon AWS SQS transport",
-                "enqueue/stomp": "STOMP transport",
-                "symfony/config": "^2.8|^3|^4",
-                "symfony/console": "^2.8|^3|^4 If you want to use li commands",
-                "symfony/dependency-injection": "^2.8|^3|^4"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.8.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Enqueue\\": ""
-                },
-                "files": [
-                    "functions_include.php"
-                ],
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Message Queue Library",
-            "homepage": "https://enqueue.forma-pro.com/",
-            "keywords": [
-                "AMQP",
-                "messaging",
-                "queue",
-                "rabbitmq"
-            ],
-            "time": "2018-03-06T10:46:03+00:00"
-        },
-        {
-            "name": "enqueue/enqueue-bundle",
-            "version": "0.8.22",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-enqueue/enqueue-bundle.git",
-                "reference": "fa026584f939dfba0429e452d6dab13d40f18c0b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-enqueue/enqueue-bundle/zipball/fa026584f939dfba0429e452d6dab13d40f18c0b",
-                "reference": "fa026584f939dfba0429e452d6dab13d40f18c0b",
-                "shasum": ""
-            },
-            "require": {
-                "enqueue/async-event-dispatcher": "^0.8@dev",
-                "enqueue/enqueue": "^0.8@dev",
-                "enqueue/null": "^0.8@dev",
-                "php": ">=5.6",
-                "symfony/framework-bundle": "^2.8|^3|^4"
-            },
-            "require-dev": {
-                "doctrine/doctrine-bundle": "~1.2",
-                "enqueue/amqp-bunny": "^0.8@dev",
-                "enqueue/amqp-ext": "^0.8@dev",
-                "enqueue/amqp-lib": "^0.8@dev",
-                "enqueue/dbal": "^0.8@dev",
-                "enqueue/fs": "^0.8@dev",
-                "enqueue/gps": "^0.8@dev",
-                "enqueue/job-queue": "^0.8@dev",
-                "enqueue/redis": "^0.8@dev",
-                "enqueue/sqs": "^0.8@dev",
-                "enqueue/stomp": "^0.8@dev",
-                "enqueue/test": "^0.8@dev",
-                "php-amqplib/php-amqplib": "^2.7@dev",
-                "phpunit/phpunit": "~5.5",
-                "symfony/browser-kit": "^2.8|^3|^4",
-                "symfony/expression-language": "^2.8|^3|^4",
-                "symfony/monolog-bundle": "^2.8|^3|^4"
-            },
-            "type": "symfony-bundle",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.8.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Enqueue\\Bundle\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Message Queue Bundle",
-            "homepage": "https://enqueue.forma-pro.com/",
-            "keywords": [
-                "AMQP",
-                "messaging",
-                "queue",
-                "rabbitmq"
-            ],
-            "time": "2018-03-01T14:09:50+00:00"
-        },
-        {
-            "name": "enqueue/null",
-            "version": "0.8.23",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-enqueue/null.git",
-                "reference": "9339c4a5921cbe791da66ea1db0316174021a43b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-enqueue/null/zipball/9339c4a5921cbe791da66ea1db0316174021a43b",
-                "reference": "9339c4a5921cbe791da66ea1db0316174021a43b",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.6",
-                "queue-interop/queue-interop": "^0.6@dev|^1.0.0-alpha1"
-            },
-            "require-dev": {
-                "enqueue/enqueue": "^0.8@dev",
-                "enqueue/test": "^0.8@dev",
-                "phpunit/phpunit": "~5.5",
-                "queue-interop/queue-spec": "^0.5.3@dev",
-                "symfony/config": "^2.8|^3|^4",
-                "symfony/dependency-injection": "^2.8|^3|^4"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.8.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Enqueue\\Null\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Enqueue Null transport",
-            "homepage": "https://enqueue.forma-pro.com/",
-            "keywords": [
-                "messaging",
-                "queue",
-                "testing"
             ],
             "time": "2018-03-06T10:46:03+00:00"
         },
@@ -1535,33 +1268,34 @@
         },
         {
             "name": "ocramius/proxy-manager",
-            "version": "2.1.1",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Ocramius/ProxyManager.git",
-                "reference": "e18ac876b2e4819c76349de8f78ccc8ef1554cd7"
+                "reference": "81d53b2878f1d1c40ad27270e64b51798485dfc5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Ocramius/ProxyManager/zipball/e18ac876b2e4819c76349de8f78ccc8ef1554cd7",
-                "reference": "e18ac876b2e4819c76349de8f78ccc8ef1554cd7",
+                "url": "https://api.github.com/repos/Ocramius/ProxyManager/zipball/81d53b2878f1d1c40ad27270e64b51798485dfc5",
+                "reference": "81d53b2878f1d1c40ad27270e64b51798485dfc5",
                 "shasum": ""
             },
             "require": {
-                "ocramius/package-versions": "^1.1.1",
-                "php": "^7.1.0",
-                "zendframework/zend-code": "^3.1.0"
+                "ocramius/package-versions": "^1.1.3",
+                "php": "^7.2.0",
+                "zendframework/zend-code": "^3.3.0"
             },
             "require-dev": {
-                "couscous/couscous": "^1.5.2",
+                "couscous/couscous": "^1.6.1",
                 "ext-phar": "*",
-                "humbug/humbug": "dev-master@DEV",
-                "nikic/php-parser": "^3.0.4",
+                "humbug/humbug": "1.0.0-RC.0@RC",
+                "nikic/php-parser": "^3.1.1",
+                "padraic/phpunit-accelerator": "dev-master@DEV",
                 "phpbench/phpbench": "^0.12.2",
-                "phpstan/phpstan": "^0.6.4",
-                "phpunit/phpunit": "^5.6.4",
-                "phpunit/phpunit-mock-objects": "^3.4.1",
-                "squizlabs/php_codesniffer": "^2.7.0"
+                "phpstan/phpstan": "dev-master#856eb10a81c1d27c701a83f167dc870fd8f4236a as 0.9.999",
+                "phpstan/phpstan-phpunit": "dev-master#5629c0a1f4a9c417cb1077cf6693ad9753895761",
+                "phpunit/phpunit": "^6.4.3",
+                "squizlabs/php_codesniffer": "^2.9.1"
             },
             "suggest": {
                 "ocramius/generated-hydrator": "To have very fast object to array to object conversion for ghost objects",
@@ -1600,55 +1334,7 @@
                 "proxy pattern",
                 "service proxies"
             ],
-            "time": "2017-05-04T11:12:50+00:00"
-        },
-        {
-            "name": "paragonie/random_compat",
-            "version": "v2.0.11",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/paragonie/random_compat.git",
-                "reference": "5da4d3c796c275c55f057af5a643ae297d96b4d8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/5da4d3c796c275c55f057af5a643ae297d96b4d8",
-                "reference": "5da4d3c796c275c55f057af5a643ae297d96b4d8",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.2.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "4.*|5.*"
-            },
-            "suggest": {
-                "ext-libsodium": "Provides a modern crypto API that can be used to generate random bytes."
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "lib/random.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Paragon Initiative Enterprises",
-                    "email": "security@paragonie.com",
-                    "homepage": "https://paragonie.com"
-                }
-            ],
-            "description": "PHP 5.x polyfill for random_bytes() and random_int() from PHP 7",
-            "keywords": [
-                "csprng",
-                "pseudorandom",
-                "random"
-            ],
-            "time": "2017-09-27T21:40:39+00:00"
+            "time": "2017-11-16T23:22:31+00:00"
         },
         {
             "name": "psr/cache",
@@ -1971,86 +1657,6 @@
             "time": "2017-08-10T11:24:15+00:00"
         },
         {
-            "name": "ramsey/uuid",
-            "version": "3.7.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ramsey/uuid.git",
-                "reference": "44abcdad877d9a46685a3a4d221e3b2c4b87cb76"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ramsey/uuid/zipball/44abcdad877d9a46685a3a4d221e3b2c4b87cb76",
-                "reference": "44abcdad877d9a46685a3a4d221e3b2c4b87cb76",
-                "shasum": ""
-            },
-            "require": {
-                "paragonie/random_compat": "^1.0|^2.0",
-                "php": "^5.4 || ^7.0"
-            },
-            "replace": {
-                "rhumsaa/uuid": "self.version"
-            },
-            "require-dev": {
-                "codeception/aspect-mock": "^1.0 | ~2.0.0",
-                "doctrine/annotations": "~1.2.0",
-                "goaop/framework": "1.0.0-alpha.2 | ^1.0 | ^2.1",
-                "ircmaxell/random-lib": "^1.1",
-                "jakub-onderka/php-parallel-lint": "^0.9.0",
-                "mockery/mockery": "^0.9.9",
-                "moontoast/math": "^1.1",
-                "php-mock/php-mock-phpunit": "^0.3|^1.1",
-                "phpunit/phpunit": "^4.7|^5.0",
-                "squizlabs/php_codesniffer": "^2.3"
-            },
-            "suggest": {
-                "ext-libsodium": "Provides the PECL libsodium extension for use with the SodiumRandomGenerator",
-                "ext-uuid": "Provides the PECL UUID extension for use with the PeclUuidTimeGenerator and PeclUuidRandomGenerator",
-                "ircmaxell/random-lib": "Provides RandomLib for use with the RandomLibAdapter",
-                "moontoast/math": "Provides support for converting UUID to 128-bit integer (in string form).",
-                "ramsey/uuid-console": "A console application for generating UUIDs with ramsey/uuid",
-                "ramsey/uuid-doctrine": "Allows the use of Ramsey\\Uuid\\Uuid as Doctrine field type."
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Ramsey\\Uuid\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Marijn Huizendveld",
-                    "email": "marijn.huizendveld@gmail.com"
-                },
-                {
-                    "name": "Thibaud Fabre",
-                    "email": "thibaud@aztech.io"
-                },
-                {
-                    "name": "Ben Ramsey",
-                    "email": "ben@benramsey.com",
-                    "homepage": "https://benramsey.com"
-                }
-            ],
-            "description": "Formerly rhumsaa/uuid. A PHP 5.4+ library for generating RFC 4122 version 1, 3, 4, and 5 universally unique identifiers (UUID).",
-            "homepage": "https://github.com/ramsey/uuid",
-            "keywords": [
-                "guid",
-                "identifier",
-                "uuid"
-            ],
-            "time": "2018-01-20T00:28:24+00:00"
-        },
-        {
             "name": "sensio/framework-extra-bundle",
             "version": "v5.1.6",
             "source": {
@@ -2120,68 +1726,17 @@
             "time": "2018-02-14T08:40:54+00:00"
         },
         {
-            "name": "sroze/enqueue-bridge",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sroze/enqueue-bridge.git",
-                "reference": "931be22103cfc9e1a499da6b937a89ade5c7ca22"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sroze/enqueue-bridge/zipball/931be22103cfc9e1a499da6b937a89ade5c7ca22",
-                "reference": "931be22103cfc9e1a499da6b937a89ade5c7ca22",
-                "shasum": ""
-            },
-            "require": {
-                "enqueue/enqueue-bundle": "^0.8.0"
-            },
-            "type": "symfony-bundle",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Sam\\Symfony\\Bridge\\EnqueueMessage\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                },
-                {
-                    "name": "Samuel Roze",
-                    "email": "samuel.roze@gmail.com"
-                }
-            ],
-            "description": "Enqueue bridge for Symfony Message component",
-            "homepage": "http://symfony.com",
-            "keywords": [
-                "enqueue",
-                "message",
-                "symfony"
-            ],
-            "time": "2018-03-13T18:57:14+00:00"
-        },
-        {
             "name": "symfony/flex",
-            "version": "v1.0.75",
+            "version": "v1.0.78",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/flex.git",
-                "reference": "3da0134564f59ffbd060db8f3406e9f3e78df64e"
+                "reference": "eead30b31db70691cd1fd1e7225190c818a1a5f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/flex/zipball/3da0134564f59ffbd060db8f3406e9f3e78df64e",
-                "reference": "3da0134564f59ffbd060db8f3406e9f3e78df64e",
+                "url": "https://api.github.com/repos/symfony/flex/zipball/eead30b31db70691cd1fd1e7225190c818a1a5f6",
+                "reference": "eead30b31db70691cd1fd1e7225190c818a1a5f6",
                 "shasum": ""
             },
             "require": {
@@ -2214,7 +1769,7 @@
                     "email": "fabien.potencier@gmail.com"
                 }
             ],
-            "time": "2018-03-20T07:32:02+00:00"
+            "time": "2018-03-27T10:04:58+00:00"
         },
         {
             "name": "symfony/monolog-bundle",
@@ -2454,16 +2009,11 @@
         {
             "name": "symfony/symfony",
             "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/symfony.git",
-                "reference": "4bbdf06c10096d979d145dd5fcd4b38c3cbc145f"
-            },
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/4bbdf06c10096d979d145dd5fcd4b38c3cbc145f",
-                "reference": "4bbdf06c10096d979d145dd5fcd4b38c3cbc145f",
-                "shasum": ""
+                "type": "path",
+                "url": "../symfony",
+                "reference": "ffa09ebb93a07a3d1b76552693054538c1ec1329",
+                "shasum": null
             },
             "require": {
                 "doctrine/common": "~2.4",
@@ -2582,7 +2132,11 @@
                     "**/Tests/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "files": [
+                    "src/Symfony/Component/VarDumper/Resources/functions/dump.php"
+                ]
+            },
             "license": [
                 "MIT"
             ],
@@ -2600,8 +2154,7 @@
             "homepage": "https://symfony.com",
             "keywords": [
                 "framework"
-            ],
-            "time": "2018-03-23T09:18:50+00:00"
+            ]
         },
         {
             "name": "twig/twig",
@@ -2781,7 +2334,6 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "sroze/enqueue-bridge": 20,
         "symfony/symfony": 20
     },
     "prefer-stable": false,

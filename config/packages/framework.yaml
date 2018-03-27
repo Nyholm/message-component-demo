@@ -15,7 +15,3 @@ framework:
         log: true
 
     serializer: ~
-    messenger:
-        routing:
-            # We want the command below to be handled async with the "enqueue_bridge.sender" (AMQP producer).
-            #'App\Message\Command\CreateNumber': enqueue_bridge.sender
