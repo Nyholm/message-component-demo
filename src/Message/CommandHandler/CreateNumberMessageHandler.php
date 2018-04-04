@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace App\Message\CommandHandler;
 
 use App\Message\Command\CreateNumber;
-use Symfony\Component\Messenger\Handler\HandlerInterface;
+use Symfony\Component\Messenger\Handler\MessageHandlerInterface;
+use Symfony\Component\Messenger\Handler\MessageSubscriberInterface;
 
 /**
  * This command handler handles message asynchronously. See config in config/packages/framework.yaml
@@ -13,7 +14,7 @@ use Symfony\Component\Messenger\Handler\HandlerInterface;
  *
  * @author Tobias Nyholm <tobias.nyholm@gmail.com>
  */
-class CreateNumberHandler implements HandlerInterface
+class CreateNumberMessageHandler implements MessageSubscriberInterface
 {
     /**
      * {@inheritdoc}
