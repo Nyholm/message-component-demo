@@ -2,7 +2,7 @@ framework:
     messenger:
         routing:
             # We want the command below to be handled async with the "messenger.default_sender" (AMQP producer).
-            'App\Message\Command\CreateNumber': messenger.default_sender
+            'App\Message\Command\CreateNumber': default
 
         adapters:
             default: "%env(AMQP_DSN)%"

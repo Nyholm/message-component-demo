@@ -13,5 +13,3 @@ framework:
     #fragments: ~
     php_errors:
         log: true
-
-    serializer: ~
