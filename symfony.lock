@@ -212,6 +212,9 @@
     "symfony/orm-pack": {
         "version": "v1.0.5"
     },
+    "symfony/polyfill-ctype": {
+        "version": "1.8-dev"
+    },
     "symfony/polyfill-mbstring": {
         "version": "v1.6.0"
     },

@@ -3,6 +3,7 @@ framework:
         routing:
             # We want the command below to be handled async with the "messenger.default_sender" (AMQP producer).
             'App\Message\Command\CreateNumber': default
+            'App\Message\Command\SendNotification': default
 
         transports:
             default: "%env(AMQP_DSN)%"
