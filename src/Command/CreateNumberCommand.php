@@ -47,7 +47,7 @@ class CreateNumberCommand extends Command
         $this->messageBus->dispatch($command);
 
         $this->io->writeln('We put a command/message on the queue. No work has been done at the moment.');
-        $this->io->writeln('Run "bin/console messenger:consume-messages messenger.default_receiver" to start reading form the queue.');
+        $this->io->writeln('Run "bin/console messenger:consume-messages default" to start reading form the queue.');
     }
 
     protected function initialize(InputInterface $input, OutputInterface $output)
