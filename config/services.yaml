@@ -32,3 +32,6 @@ services:
         resource: '../src/Message/QueryHandler/*'
         tags: ['messenger.message_handler']
 
+    App\Message\EventSubscriber\:
+        resource: '../src/Message/EventSubscriber/*'
+        tags: ['messenger.message_handler']

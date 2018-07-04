@@ -1,9 +1,32 @@
 framework:
     messenger:
-        routing:
-            # We want the command below to be handled async with the "messenger.default_sender" (AMQP producer).
-            'App\Message\Command\CreateNumber': default
-            'App\Message\Command\SendNotification': default
 
-        transports:
-            default: "%env(AMQP_DSN)%"
+        default_bus: messenger.bus.command
+        buses:
+            messenger.bus.command:
+                middleware:
+                    - validation
+                    - messenger.middleware.handles_recorded_messages
+                    - doctrine_transaction_middleware: ['default']
+            messenger.bus.query:
+                middleware:
+                    - validation
+            messenger.bus.event:
+                middleware:
+                    - allow_no_handler
+                    - validation
+
+services:
+    doctrine.orm.messenger.middleware_factory.transaction:
+        class: Symfony\Bridge\Doctrine\Messenger\DoctrineTransactionMiddlewareFactory
+        arguments: ['@doctrine']
+
+    doctrine_transaction_middleware:
+        class: Symfony\Bridge\Doctrine\Messenger\DoctrineTransactionMiddleware
+        factory: ['@doctrine.orm.messenger.middleware_factory.transaction', 'createMiddleware']
+        abstract: true
+        # the default arguments to use when none provided from config.
+        # i.e:
+        #   middlewares:
+        #     - doctrine_transaction_middleware: ~
+        arguments: ['default']

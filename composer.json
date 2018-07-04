@@ -12,13 +12,14 @@
         "sensio/framework-extra-bundle": "^5.1",
         "symfony/console": "^4.0",
         "symfony/debug-pack": "^1.0",
-        "symfony/flex": "^1.0",
+
         "symfony/framework-bundle": "^4.1@dev",
         "symfony/messenger": "^4.1@dev",
         "symfony/monolog-bundle": "^3.1",
         "symfony/serializer-pack": "dev-master",
         "symfony/web-server-bundle": "^4.0",
-        "symfony/yaml": "^4.0"
+        "symfony/yaml": "^4.0",
+        "symfony/symfony": "dev-master"
     },
     "require-dev": {
         "symfony/dotenv": "^4.0"
@@ -47,7 +48,6 @@
     },
     "scripts": {
         "auto-scripts": {
-            "cache:clear": "symfony-cmd",
             "assets:install --symlink --relative %PUBLIC_DIR%": "symfony-cmd"
         },
         "post-install-cmd": [

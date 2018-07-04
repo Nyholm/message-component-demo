@@ -5,8 +5,10 @@ declare(strict_types=1);
 namespace App\Message\CommandHandler;
 
 use App\Message\Command\CreateNumber;
+use App\Message\Event\NumberCreated;
 use Symfony\Component\Messenger\Handler\MessageHandlerInterface;
 use Symfony\Component\Messenger\Handler\MessageSubscriberInterface;
+use Symfony\Component\Messenger\MessageRecorderInterface;
 
 /**
  * This command handler handles message asynchronously. See config in config/packages/framework.yaml
@@ -16,6 +18,18 @@ use Symfony\Component\Messenger\Handler\MessageSubscriberInterface;
  */
 class CreateNumberMessageHandler implements MessageSubscriberInterface
 {
+    private $eventRecorder;
+
+    /**
+     *
+     * @param $eventRecorder
+     */
+    public function __construct(MessageRecorderInterface $eventRecorder)
+    {
+        $this->eventRecorder = $eventRecorder;
+    }
+
+
     /**
      * {@inheritdoc}
      */
@@ -30,5 +44,10 @@ class CreateNumberMessageHandler implements MessageSubscriberInterface
         $number = rand($command->getMin(), $command->getMax());
 
         // TODO Store in database... or whatever
+
+        // Dispatch event
+        $event = new NumberCreated($number);
+        $this->eventRecorder->record($event);
+
     }
 }
