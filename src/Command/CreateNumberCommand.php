@@ -25,11 +25,11 @@ class CreateNumberCommand extends Command
     private $io;
 
     /**
-     * @param MessageBusInterface $messageBus
+     * @param MessageBusInterface $queryBus
      */
-    public function __construct(MessageBusInterface $messageBus)
+    public function __construct(MessageBusInterface $queryBus)
     {
-        $this->messageBus = $messageBus;
+        $this->messageBus = $queryBus;
         parent::__construct();
     }
 

@@ -10,12 +10,15 @@ services:
         public: false       # Allows optimizing the container by removing unused services; this also means
                             # fetching services directly from the container via $container->get() won't work.
                             # The best practice is to be explicit about your dependencies anyway.
+        bind:
+            Symfony\Component\Messenger\MessageBusInterface $commandBus: '@messenger.bus.command'
+            #Symfony\Component\Messenger\MessageBusInterface $eventBus: '@messenger.bus.event'
 
     # makes classes in src/ available to be used as services
     # this creates a service per class whose id is the fully-qualified class name
     App\:
         resource: '../src/*'
-        exclude: '../src/{Entity,Migrations,Tests,Message}'
+        exclude: '../src/{Entity,Migrations,Tests}'
 
     # controllers are imported separately to make sure services can be injected
     # as action arguments even if you don't extend any base controller class
@@ -23,11 +26,5 @@ services:
         resource: '../src/Controller'
         tags: ['controller.service_arguments']
 
-
-    App\Message\CommandHandler\:
-        resource: '../src/Message/CommandHandler/*'
-
-    App\Message\QueryHandler\:
-        resource: '../src/Message/QueryHandler/*'
-        tags: ['messenger.message_handler']
-
+    App\Message\QueryBus:
+        arguments: ['@messenger.bus.query']

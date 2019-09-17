@@ -6,6 +6,7 @@ namespace App\Command;
 
 use App\Entity\User;
 use App\Message\Query\FetchUser;
+use App\Message\QueryBus;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
@@ -19,18 +20,15 @@ class FetchUserCommand extends Command
 {
     protected static $defaultName = 'app:fetch-user';
 
-    /** @var MessageBusInterface */
-    private $messageBus;
+    /** @var QueryBus */
+    private $queryBus;
 
     /** @var SymfonyStyle */
     private $io;
 
-    /**
-     * @param MessageBusInterface $messageBus
-     */
-    public function __construct(MessageBusInterface $messageBus)
+    public function __construct(QueryBus $queryBus)
     {
-        $this->messageBus = $messageBus;
+        $this->queryBus = $queryBus;
         parent::__construct();
     }
 
@@ -45,7 +43,7 @@ class FetchUserCommand extends Command
         $command = new FetchUser(4711);
 
         /** @var User $user */
-        $user = $this->messageBus->dispatch($command);
+        $user = $this->queryBus->query($command);
 
         $this->io->writeln(sprintf('We found a user named "%s" with id: %d', $user->getName(), $user->getId()));
     }
