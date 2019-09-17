@@ -6,9 +6,8 @@ namespace App\Controller;
 
 use App\Message\Query\FetchUser;
 use App\Message\QueryBus;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\Messenger\MessageBusInterface;
+use Symfony\Component\Routing\Annotation\Route;
 
 class Startpage
 {
